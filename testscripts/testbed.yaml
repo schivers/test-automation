@@ -1,0 +1,17 @@
+testbed:
+  name: Home office 3750
+
+
+devices:
+  ES01P:
+    os: ios
+    type: switch
+    credentials:
+        default:
+            username: admin
+            password: cisco
+    connections:
+      console:
+        ip: 192.168.1.2
+        protocol: ssh
+        port: 22

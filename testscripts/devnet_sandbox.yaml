@@ -1,0 +1,36 @@
+testbed:
+
+  name: devnet_always_on_sandbox
+
+
+devices:
+
+  csr1000v-1:
+   alias: ios
+   os: ios
+   type: router
+   tacacs:
+       username: developer
+   passwords:
+       tacacs: C1sco12345
+ #        enable: "Admin_1234!"
+   connections:
+     defaults:
+       class: unicon.Unicon
+     ssh:
+       protocol: ssh
+       ip: "ios-xe-mgmt-latest.cisco.com"
+       port: "8181"
+
+  ES01P:
+    os: ios
+    type: switch
+    credentials:
+        default:
+            username: admin
+            password: cisco
+    connections:
+      console:
+        ip: 192.168.1.2
+        protocol: ssh
+        port: 22
