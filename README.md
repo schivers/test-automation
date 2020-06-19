@@ -6,10 +6,13 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
+If you dont already have it installed you will need to install Docker <br />
+Download docker from https://docs.docker.com/get-docker/
 
+Confirm docker is installed
 ```
-install docker
+docker --version
+Docker version 19.03.8, build afacb8b
 ```
 
 ### Download the pyATS docker image
